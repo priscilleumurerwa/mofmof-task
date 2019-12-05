@@ -37,14 +37,18 @@
   </div>
   </div >
  
-   
- 
+ <% i = 0 %>
   <%= f.fields_for :stations do |s| %>
    
-    <h2><b>Name of railway line </b></h2>
+    <h2><b>Name of railway line </b>      
+        <% i += 1 %>
+         <%= i %> </h2>
     <div class="field">
-    <%= s.label :name_of_railway_line %>
+
+    <%= s.label :name_of_railway_line %> 
+   
     <%= s.text_field :name_of_railway_line %>
+
   </div>
 
   <div class="field">
